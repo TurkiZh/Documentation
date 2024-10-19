@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="441.0" prefWidth="680.0" style="-fx-background-color: f5f0e1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectdocumentation.Login">
+   <children>
+      <TextField fx:id="username" alignment="CENTER_RIGHT" layoutX="452.0" layoutY="221.0" promptText="اسم المستخدم" style="-fx-background-color: GAINSBORO;" />
+      <PasswordField fx:id="password" alignment="CENTER_RIGHT" layoutX="452.0" layoutY="275.0" promptText="كلمة المرور" style="-fx-background-color: GAINSBORO;" />
+      <Button fx:id="login" layoutX="469.0" layoutY="346.0" mnemonicParsing="false" onAction="#btn_login" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: SILVER;" text="تسجيل دخول" />
+      <Pane prefHeight="441.0" prefWidth="384.0" style="-fx-background-color: LIGHTSLATEGREY;">
+         <children>
+            <Label layoutX="60.0" layoutY="263.0" text="مؤسسة مملكة الإتقان">
+               <font>
+                  <Font name="Dubai Bold" size="32.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7677725118483412" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3552631437778473" green="0.3552631437778473" blue="0.3552631437778473" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.020711500197649002" green="0.19446474313735962" blue="0.2631579041481018" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="logo" fitHeight="121.0" fitWidth="332.0" layoutX="26.0" layoutY="128.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="396.0" prefHeight="21.0" prefWidth="185.0" text="مملكة الإتقان - 0550117127">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label layoutX="480.0" layoutY="175.0" text="تسجيل دخول">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="27.0" prefHeight="51.0" prefWidth="116.0" text="الأرشفة" textFill="#ffbf00">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="449.0" layoutY="65.0" prefHeight="56.0" prefWidth="143.0" text="الإلكترونية" textFill="#ffbf00">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
